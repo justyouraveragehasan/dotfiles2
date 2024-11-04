@@ -195,3 +195,8 @@ default_border pixel 0
 exec --no-startup-id picom --daemon
 exec_always --no-startup-id nitrogen --random --set-scaled
 exec_always pulseaudio -D
+bindsym $mod+Shift+s exec maim -s | xclip -selection clipboard -t image/png
+
+# Move focused window to scratchpad with Mod + Shift + -
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show

@@ -20,4 +20,7 @@ vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
 vim.opt.clipboard="unnamedplus"
 
+vim.opt.conceallevel =  1
+
 vim.api.nvim_set_keymap('n', '<leader>o', ':Ex<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Space>', '<Space>', { noremap = true })
